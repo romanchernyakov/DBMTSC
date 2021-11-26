@@ -1,0 +1,90 @@
+
+@font-face {
+    font-family: "Mistral";
+    src: url("../assets/Mistral.woff");
+}
+body {
+    background-color: rgb(10, 10, 10);
+}
+.menu {
+    font-family: "mistral";
+    font-size: 40px;
+    color: rgb(238, 255, 0);
+    text-align: center;
+    margin: 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: rgb(238, 255, 0);
+    transition: all 0.5s;
+}
+.menu a:visited {
+    color: rgb(238, 255, 0);
+}
+.menu a:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+.car{
+    margin-top: 90px;
+    transform-origin: 15% 69% 0;
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    top: 230px;
+    left: 520px;
+}
+.car:hover {
+    animation: rotate 1s infinite alternate;
+}
+.shadow img {
+    position: absolute;
+    top: 510px;
+    left: 525px;
+    z-index: 2;
+    transform-origin: 15% 0% 0;
+}
+.shadow img:hover {
+    animation: shrink 1s infinite alternate;
+}
+
+h1 {
+    font-family: "Mistral";
+    font-size: 90px;
+    text-align: center;
+    color: rgb(238, 255, 0);
+    margin-top: 0px;
+    margin-left: 210px;
+    margin-right: 210px;
+    transition: all 1s;
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    animation: shadow 0.5s infinite alternate ;
+    
+}
+.door img {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+}
+
+h1:hover {
+    color: orangered;
+    text-shadow:0px 40px 400px rgb(255, 0, 0);
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-10deg);}
+}
+@keyframes shrink {
+    from {width: 29%;
+    height: 9%;}
+    to {width: 27%;
+    height: 9%;}
+}
+@keyframes shadow {
+    from {text-shadow: 0px 0px 10px rgb(238, 255, 0) ;}
+    to {text-shadow: 0px 0px 0px rgb(238, 255, 0) ;}
+}
